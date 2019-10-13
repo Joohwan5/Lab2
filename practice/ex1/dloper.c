@@ -9,7 +9,7 @@ int main()
         int (*divide)(int,int) ;  
         char *error;
         
-	handle = dlopen ("./ex1/liboper.so", RTLD_LAZY);
+	handle = dlopen ("./sub/liboper.so", RTLD_LAZY);
 	if (!handle) {
 		fputs (dlerror(), stderr);  
 		exit(1);
